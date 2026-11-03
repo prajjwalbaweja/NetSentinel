@@ -1,0 +1,16 @@
+date_utc=2026-11-01T05:31:51Z
+platform=macOS-26.7.1-arm64-arm-64bit
+machine=arm64
+python=3.9.6
+exe=/Users/REDACTED/Downloads/NetSentinel_R1_handover-2/netsentinel/build/netsentinel
+exe_sha256=9bf5292e0820a8c3a7b5abd1122d47bce3d45af80419ebff077ec5c2fc27a428
+libpcap_linkage=/usr/lib/libpcap.A.dylib (compatibility version 1.0.0, current version 1.0.0)
+pcap=/Users/REDACTED/datasets/cicids2017/friday/Friday-WorkingHours.classic.pcap
+pcap_bytes=8667370092
+pcap_sha256=9e8de447f9604d4f662cbcac9976266cf7a14d37933ac1e061c92a2a206e4c0a
+r0_exe=/Users/REDACTED/Downloads/NetSentinel_R1_handover-2/r0-ref/build/netsentinel
+r0_exe_sha256=b61efedf84695e968c6d1f00228adc3f3c06914c6d2b668641d67a609f7dadc3
+labels=/Users/REDACTED/datasets/cicids2017/friday/Friday-WorkingHours.csv
+offset_seconds=-7199.501
+git_describe=r1-handover-2
+git_head=09d6269dfdcc53aa45fd1dc9f4fa35ba95c001ad

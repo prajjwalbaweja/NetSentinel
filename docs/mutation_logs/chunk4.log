@@ -1,0 +1,9 @@
+pristine copy: ctest rc=0 failed=[]
+id   predicted outcome            mutation                                                     failing tests
+M26  kill      KILLED             R0-4: read error never recorded                              golden_trunc_data,golden_trunc_hdr,golden_trunc_mid
+M27  kill      KILLED             R0-4: clean EOF also flagged as a read error                 golden_sample_original,golden_sample_regenerated,golden_gap,golden_boundary...
+M28  kill      KILLED             R0-4: read-error exit code 2 -> 1                            golden_trunc_data,golden_trunc_hdr,golden_trunc_mid
+
+SUMMARY: 3 mutants, 3 killed, 0 survived, 0 invalid
+survivors (id, predicted): []
+prediction mismatches (id, predicted, actual): none

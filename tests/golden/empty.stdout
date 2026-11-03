@@ -1,0 +1,21 @@
+NetSentinel -- Statistical Anomaly Detection Pipeline
+Reading: tests/data/synthetic/empty.pcap
+
+
+--- Run summary ---
+Packets read from PCAP:                 0
+Packets parsed (IPv4):                  0
+Packets skipped (unparseable/non-IPv4):  0
+  of which IPv6:                        0
+  of which other ethertype:             0
+  of which malformed IPv4:              0
+  of which truncated link header:       0
+Late packets dropped:                   0
+Far-future packets quarantined:         0
+Idle gaps capped (60 s rule):           0
+Windows emitted:                        0
+  scored:                               0
+  idle (not scored/learned):            0
+  no parsed traffic (not scored/learned): 0
+  partial final (not scored/learned):   0
+Alerts raised:                           0

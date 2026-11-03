@@ -1,0 +1,2 @@
+File name,File encapsulation,Packet size limit,Packet size limit min (inferred),Packet size limit max (inferred),Number of packets,File size (bytes),Start time,End time,Strict time order
+/Users/REDACTED/datasets/cicids2017/friday/Friday-WorkingHours.classic.pcap,ether,262144,n/a,n/a,9997874,8667370092,2017-07-07 17:29:39.599128,2017-07-08 01:32:41.169108,False

@@ -1,0 +1,18 @@
+NetSentinel Phase 6 - CICIDS2017 Friday evidence notes (1 Nov 2026)
+Code: r1-handover-2 (09d6269); macOS clean Release build, ctest 51/51; libpcap /usr/lib/libpcap.A.dylib
+R0: tag r0-reference -> commit f0e39c0cf9c8a10adba51b026546d538fb71c6a0; built via git archive into ../r0-ref; sample.pcap 30 windows, 1 alert
+PCAP source: UNB cicresearch.ca CIC-IDS-2017/PCAPs/Friday-WorkingHours.pcap (browser download, registration required)
+Official MD5: 7366c552425956e610bd69f57feb7e7a
+Labels: Engelen et al. WTMC2021 improved CICIDS2017, dataset.zip (333.8 MB), Friday-WorkingHours.csv 282607319 bytes, dated 22 Nov 2021
+Label rows: 547915 (BENIGN 291433, Bot 738, Bot - Attempted 1470, DDoS 95123, PortScan 159151)
+Parser check: 547915 of 547915 rows parsed, format %d/%m/%Y %I:%M:%S %p; all 10 columns detected
+Not used: 2022 relabelled version (future work)
+Pre-registered hypotheses (written 1 Nov 2026 before any Friday result):
+H1 PortScan detected mainly via unique_dst_ports.
+H2 Bot (738 flows over ~1 h) mostly missed by all configurations.
+H3 DDoS (~20 min) exceeds B1's 60-window recovery: B1 should alert longer than B0, then fade after ~5 min.
+PCAP: MD5 verified (7366c552425956e610bd69f57feb7e7a), 8839309056 bytes, actually pcapng despite .pcap name; 9997874 packets; 8.05 h; strict time order False
+Converted with: editcap -F pcap Friday-WorkingHours.pcap Friday-WorkingHours.classic.pcap (all configurations use the converted file)
+Converted PCAP: classic pcap (d4c3b2a1), 9997874 packets (exact, capinfos -M), same first/last time as original
+Offset (align.py): -7199.501 s (-2.000 h); 6412 matched 5-tuples, 100% in one cluster, spread +/-0.5 s; measured on first 2991142 packets / 200000 flows; hour12 heuristic not used
+Interpretation: corrected CSV timestamps are in CICFlowMeter host time (UTC+2), not New Brunswick time; the ~3 h offset applies only to original UNB CSVs

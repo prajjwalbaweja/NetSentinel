@@ -1,0 +1,13 @@
+# name	pcap	expect_exit	stderr_contains|-	tags
+# 31 Oct 2026: all goldens regenerated deliberately after the time and window policy change; every stdout diff was reviewed: final windows now 'partial ... not scored, not learned', idle windows not scored, summary gained provenance counters.
+sample_original	data/sample.pcap	0	-	fixed:partial-final-window-not-scored|by-design:cumulative-baseline-learns-attack-window
+sample_regenerated	tests/data/regenerated/sample_regenerated.pcap	0	-	fixed:partial-final-window-not-scored|by-design:cumulative-baseline-learns-attack-window
+gap	tests/data/synthetic/gap.pcap	0	-	fixed:idle-windows-not-scored-or-learned|fixed:gap-cap-12-idle-windows
+boundary	tests/data/synthetic/boundary.pcap	0	-	threshold-boundary: window 25 z~2.97 no alert, window 26 z~3.05 alert
+empty	tests/data/synthetic/empty.pcap	0	-	-
+corrupt	tests/data/synthetic/corrupt.pcap	1	unknown file format	-
+trunc_global	tests/data/synthetic/trunc_global.pcap	1	truncated dump file	-
+trunc_data	tests/data/synthetic/trunc_data.pcap	2	truncated dump file	PCAP read error -> exit 2 (clean EOF stays exit 0)
+trunc_hdr	tests/data/synthetic/trunc_hdr.pcap	2	truncated dump file	PCAP read error -> exit 2 (clean EOF stays exit 0)
+missing	tests/data/synthetic/does_not_exist.pcap	1	No such file or directory	-
+trunc_mid	tests/data/synthetic/trunc_mid.pcap	2	truncated dump file	PCAP read error -> exit 2 (clean EOF stays exit 0)

@@ -1,0 +1,22 @@
+label flows indexed: 200000 (distinct 5-tuples 94539); timestamp format detected: %d/%m/%Y %I:%M:%S %p
+pcap packets scanned: 2991142; 5-tuples matched: 6412
+histogram of (pcap - label) in hours (half-hour bins), top 6:
+     -2.0 h : 6412
+{
+  "offset_seconds": -7199.501,
+  "matches": 6412,
+  "cluster_matches": 6412,
+  "share_within_120s": 1.0,
+  "cluster_spread_s": [
+    -0.5,
+    0.5
+  ],
+  "pcap_packets_scanned": 2991142,
+  "timestamp_format": "%d/%m/%Y %I:%M:%S %p",
+  "hour12_heuristic": false,
+  "pcap": "Friday-WorkingHours.classic.pcap",
+  "labels": [
+    "Friday-WorkingHours.csv"
+  ]
+}
+OFFSET ACCEPTED: -7199.501 s (-2.000 h). Use: --offset -7199.501

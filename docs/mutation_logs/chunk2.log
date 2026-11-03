@@ -1,0 +1,15 @@
+pristine copy: ctest rc=0 failed=[]
+id   predicted outcome            mutation                                                     failing tests
+M10  kill      KILLED             Welford delta2 = delta (classic bug)                         StatEngineTests,golden_sample_original,golden_sample_regenerated,golden_gap...
+M11  kill      KILLED             ignore negative z (|z| -> z)                                 golden_sample_original,golden_sample_regenerated,golden_gap,oracle_sample_original...
+M12  survive-equivalent SURVIVED           threshold test > -> >=                                       
+M13  survive-equivalent SURVIVED           scorer drops its isWarmedUp() check (zScore returns NaN anyw 
+M14  kill      KILLED             window close test >= -> >                                    golden_sample_original,golden_sample_regenerated,golden_gap,golden_boundary...
+M15  survive-gap SURVIVED           count dst port for every protocol                            
+M16  survive-gap SURVIVED           UDP port parsing disabled                                    
+M17  survive-gap SURVIVED           ethertype IPv4 check removed                                 
+M18  kill      KILLED             update baselines BEFORE scoring                              golden_sample_original,golden_sample_regenerated,golden_gap,golden_boundary...
+
+SUMMARY: 9 mutants, 4 killed, 5 survived, 0 invalid
+survivors (id, predicted): [('M12', 'survive-equivalent'), ('M13', 'survive-equivalent'), ('M15', 'survive-gap'), ('M16', 'survive-gap'), ('M17', 'survive-gap')]
+prediction mismatches (id, predicted, actual): none

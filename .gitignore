@@ -1,0 +1,16 @@
+*.gcda
+*.gcno
+*.gcov
+*.o
+*.pyc
+.DS_Store
+__pycache__/
+build/
+build_*/
+results/
+# editors and IDEs
+.vscode/
+.idea/
+cmake-build-*/
+*.swp
+.cache/

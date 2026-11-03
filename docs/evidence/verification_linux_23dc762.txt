@@ -1,0 +1,47 @@
+Final verification, Linux, 2026-10-31T13:46:42Z
+Linux 6.18.44-fc-v185 x86_64
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cmake version 3.28.3
+Python 3.13.18
+git: a81a181c721b9a35eee5dabd592c4ed82a583e56 (working tree changes: 7 files, documentation only)
+
+== clean Release build + ctest
+compiler warnings+errors: 0
+
+100% tests passed, 0 tests failed out of 51
+
+Total Test time (real) =   4.68 sec
+
+== ASan + UBSan + strict warnings build + ctest
+compiler warnings+errors: 0
+
+100% tests passed, 0 tests failed out of 51
+
+Total Test time (real) =   8.48 sec
+
+== unit test counts
+All tests passed (259 assertions in 27 test cases)
+
+
+== sample.pcap (B0 default)
+
+--- Run summary ---
+Packets read from PCAP:                 717
+Packets parsed (IPv4):                  714
+Packets skipped (unparseable/non-IPv4):  3
+  of which IPv6:                        0
+  of which other ethertype:             2
+  of which malformed IPv4:              0
+  of which truncated link header:       1
+Late packets dropped:                   0
+Far-future packets quarantined:         0
+Idle gaps capped (60 s rule):           0
+Windows emitted:                        30
+  scored:                               29
+  idle (not scored/learned):            0
+  no parsed traffic (not scored/learned): 0
+  partial final (not scored/learned):   1
+Alerts raised:                           1
+
+== binary sha256
+f1cdea281590907a866eea557682281e4853749c7cbe4430c9395582d2045ba5  /home/REDACTED/work/build_verify/netsentinel

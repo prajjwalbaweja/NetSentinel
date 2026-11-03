@@ -1,0 +1,159 @@
+NetSentinel -- Statistical Anomaly Detection Pipeline
+Reading: tests/data/synthetic/boundary.pcap
+
+Window 0 [1000.0s - 1005.0s): packet_count=18 avg_packet_size=146 unique_dst_ports=2 unique_dst_ips=3
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 1 [1005.0s - 1010.0s): packet_count=19 avg_packet_size=150 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 2 [1010.0s - 1015.0s): packet_count=20 avg_packet_size=154 unique_dst_ports=2 unique_dst_ips=5
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 3 [1015.0s - 1020.0s): packet_count=21 avg_packet_size=158 unique_dst_ports=2 unique_dst_ips=3
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 4 [1020.0s - 1025.0s): packet_count=22 avg_packet_size=146 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 5 [1025.0s - 1030.0s): packet_count=18 avg_packet_size=150 unique_dst_ports=2 unique_dst_ips=5
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 6 [1030.0s - 1035.0s): packet_count=19 avg_packet_size=154 unique_dst_ports=2 unique_dst_ips=3
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 7 [1035.0s - 1040.0s): packet_count=20 avg_packet_size=158 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 8 [1040.0s - 1045.0s): packet_count=21 avg_packet_size=146 unique_dst_ports=2 unique_dst_ips=5
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 9 [1045.0s - 1050.0s): packet_count=22 avg_packet_size=150 unique_dst_ports=2 unique_dst_ips=3
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 10 [1050.0s - 1055.0s): packet_count=18 avg_packet_size=154 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 11 [1055.0s - 1060.0s): packet_count=19 avg_packet_size=158 unique_dst_ports=2 unique_dst_ips=5
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 12 [1060.0s - 1065.0s): packet_count=20 avg_packet_size=146 unique_dst_ports=2 unique_dst_ips=3
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 13 [1065.0s - 1070.0s): packet_count=21 avg_packet_size=150 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 14 [1070.0s - 1075.0s): packet_count=22 avg_packet_size=154 unique_dst_ports=2 unique_dst_ips=5
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 15 [1075.0s - 1080.0s): packet_count=18 avg_packet_size=158 unique_dst_ports=2 unique_dst_ips=3
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 16 [1080.0s - 1085.0s): packet_count=19 avg_packet_size=146 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 17 [1085.0s - 1090.0s): packet_count=20 avg_packet_size=150 unique_dst_ports=2 unique_dst_ips=5
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 18 [1090.0s - 1095.0s): packet_count=21 avg_packet_size=154 unique_dst_ports=2 unique_dst_ips=3
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 19 [1095.0s - 1100.0s): packet_count=22 avg_packet_size=158 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: warming up
+    avg_packet_size: warming up
+    unique_dst_ports: warming up
+    unique_dst_ips: warming up
+Window 20 [1100.0s - 1105.0s): packet_count=18 avg_packet_size=146 unique_dst_ports=2 unique_dst_ips=5
+    packet_count: z=-1.3784
+    avg_packet_size: z=-1.30767
+    unique_dst_ports: z=N/A (near-zero baseline variance)
+    unique_dst_ips: z=1.27184
+Window 21 [1105.0s - 1110.0s): packet_count=19 avg_packet_size=150 unique_dst_ports=2 unique_dst_ips=3
+    packet_count: z=-0.611315
+    avg_packet_size: z=-0.367884
+    unique_dst_ports: z=N/A (near-zero baseline variance)
+    unique_dst_ips: z=-1.19523
+Window 22 [1110.0s - 1115.0s): packet_count=20 avg_packet_size=154 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: z=0.0935804
+    avg_packet_size: z=0.518089
+    unique_dst_ports: z=N/A (near-zero baseline variance)
+    unique_dst_ips: z=0.0538642
+Window 23 [1115.0s - 1120.0s): packet_count=21 avg_packet_size=158 unique_dst_ports=2 unique_dst_ips=5
+    packet_count: z=0.793866
+    avg_packet_size: z=1.39612
+    unique_dst_ports: z=N/A (near-zero baseline variance)
+    unique_dst_ips: z=1.26555
+Window 24 [1120.0s - 1125.0s): packet_count=22 avg_packet_size=146 unique_dst_ports=2 unique_dst_ips=3
+    packet_count: z=1.47582
+    avg_packet_size: z=-1.31339
+    unique_dst_ports: z=N/A (near-zero baseline variance)
+    unique_dst_ips: z=-1.19896
+Window 25 [1125.0s - 1130.0s): packet_count=20 avg_packet_size=165.5 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: z=0
+    avg_packet_size: z=2.96739
+    unique_dst_ports: z=N/A (near-zero baseline variance)
+    unique_dst_ips: z=0.0475831
+Window 26 [1130.0s - 1135.0s): packet_count=20 avg_packet_size=168.35 unique_dst_ports=2 unique_dst_ips=4
+    packet_count: z=0
+    avg_packet_size: z=3.04387
+    unique_dst_ports: z=N/A (near-zero baseline variance)
+    unique_dst_ips: z=0.0466943
+  !! ANOMALY  window [1130.0s, 1135.0s)
+       - avg_packet_size: observed=168.35  z=3.044
+Window 27 [1135.0s - 1140.0s): partial final window (packet_count=20) -- not scored, not learned
+
+--- Run summary ---
+Packets read from PCAP:                 560
+Packets parsed (IPv4):                  560
+Packets skipped (unparseable/non-IPv4):  0
+  of which IPv6:                        0
+  of which other ethertype:             0
+  of which malformed IPv4:              0
+  of which truncated link header:       0
+Late packets dropped:                   0
+Far-future packets quarantined:         0
+Idle gaps capped (60 s rule):           0
+Windows emitted:                        28
+  scored:                               27
+  idle (not scored/learned):            0
+  no parsed traffic (not scored/learned): 0
+  partial final (not scored/learned):   1
+Alerts raised:                           1

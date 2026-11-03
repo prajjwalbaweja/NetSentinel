@@ -1,0 +1,18 @@
+{
+  "offset_seconds": -7199.501,
+  "matches": 6412,
+  "cluster_matches": 6412,
+  "share_within_120s": 1.0,
+  "cluster_spread_s": [
+    -0.5,
+    0.5
+  ],
+  "pcap_packets_scanned": 2991142,
+  "timestamp_format": "%d/%m/%Y %I:%M:%S %p",
+  "hour12_heuristic": false,
+  "pcap": "Friday-WorkingHours.classic.pcap",
+  "labels": [
+    "Friday-WorkingHours.csv"
+  ],
+  "accepted": true
+}

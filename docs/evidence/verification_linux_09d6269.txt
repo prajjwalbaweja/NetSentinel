@@ -1,0 +1,49 @@
+Verification for tag r1-handover-2, Linux, 2026-11-01T03:00:14Z
+Linux 6.18.44-fc-v185 x86_64
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cmake version 3.28.3
+Python 3.13.18
+verified commit: 87565b6722a25dc445fd4d69c16fd26b8a45cf16 (clean working tree; the only uncommitted file was this log while it was written)
+
+== 1. clean Release build + full ctest
+compiler warnings+errors: 0
+100% tests passed, 0 tests failed out of 51
+
+Total Test time (real) =   4.71 sec
+
+== 2. ASan + UBSan + strict warnings, full ctest
+compiler warnings+errors: 0
+100% tests passed, 0 tests failed out of 51
+
+Total Test time (real) =   8.13 sec
+
+== unit tests
+All tests passed (1471 assertions in 30 test cases)
+
+== 3. new tests vs mutants (temporary copy; see commit e552f4a)
+M25 view.length=header->len: KILLED by [M25]; M07 epsilon 1e-5: KILLED by [M07]; epsilon 1e-7: KILLED by [M07]
+R0 harness on updated tree: SUMMARY: 28 mutants, 18 killed, 0 survived, 10 invalid
+
+== 4. fixture hashes
+entries ok (24 fixtures + data/sample.pcap): 25
+mismatches: 0
+regenerated and matching: 24
+root MANIFEST.sha256 (historical R0-0, unchanged): 17 FAILED at HEAD (expected); unchanged since R0: yes
+
+== 5. B0 unchanged from R0
+StatEngine/IStatEngine diff lines vs r0-reference: 0
+sample.pcap windows 0-28: R0 binary and R1 B0 print identical features, z-scores and alert
+
+== 6. D7 unchanged
+86:    static constexpr std::array<double, 4> DEFAULT_SD_FLOOR = {0.5, 2.0, 0.5, 0.5};
+158:    const bool useFloor = config_.policy == BaselinePolicy::B1 && config_.sdFloorEnabled;
+pipeline/scorer/main diff lines vs r1-handover: 0
+b0 + --sd-floor exit: 64
+frozen + --sd-floor exit: 64
+
+== sample.pcap summary (B0)
+  no parsed traffic (not scored/learned): 0
+  partial final (not scored/learned):   1
+Alerts raised:                           1
+== binary sha256
+f1cdea281590907a866eea557682281e4853749c7cbe4430c9395582d2045ba5

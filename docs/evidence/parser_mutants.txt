@@ -1,0 +1,12 @@
+Parser mutants against tests/unit (ASan build, NS_SANITIZE=ON), commit after 26e1545, Linux, 31 Oct 2026.
+Each mutant applied to src/FeatureExtractor.cpp, unit tests rebuilt and run, file restored.
+M1 version check removed            KILLED (test failure)
+M2 IHL<5 accepted                    KILLED (test failure)
+M3 declared-IHL bound removed        KILLED (test failure)
+M4 minimal IPv4 length removed       SURVIVED first run (test buffer capacity > size hid the over-read);
+                                     KILLED after test buffers made exactly sized (ASan heap-buffer-overflow)
+M5 transport length check removed    KILLED (ASan heap-buffer-overflow)
+M6 fragment check removed            KILLED (test failure)
+M7 VLAN bounds check removed         KILLED (test failure)
+M8 on-wire length ignored            KILLED (test failure)
+Result: 8/8 killed. Closes RF-01 (audit mutants A08-A12 correspond to M2, M3, M4, M1, M5).
